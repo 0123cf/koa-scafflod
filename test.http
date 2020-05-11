@@ -1,0 +1,25 @@
+@api = http://localhost:3087/api/
+
+### 添加期号
+POST {{api}}date_number/add
+Content-Type: application/json
+
+{
+    "date": "2020/5/11",
+    "list": [111, 223]
+}
+### 更新期号
+POST {{api}}date_number/update
+Content-Type: application/json
+
+{
+    "date": "2020/5/11",
+    "list": [20150564, 111651]
+}
+### 查询期号
+GET  {{api}}date_number/select
+#### 删除期号
+POST {{api}}date_number/remove
+Content-Type: application/json
+
+{"date": "2020/5/9"}
